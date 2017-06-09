@@ -1,8 +1,7 @@
 # Functional programming
 
 D puts an emphasis on *functional programming* and provides
-first-class support for development
-in a functional style.
+first-class support for development in a functional style.
 
 In D a function can be declared as `pure` which implies
 that given the same input parameters, always the **same**
@@ -87,6 +86,6 @@ void main()
     foreach (i; 0 .. 10)
         benchmark!test(1)[0]
         	.to!("msecs", double)
-        	.writeln("took: miliseconds");
+        	.writeln("took: milliseconds");
 }
 ```
